@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Q币充值</title>
+    <h5>你的Q币余额是 <span id="amount">&&&amount&&&</span></h5>
+    <button id="button">充值</button>
+</head>
+<body>
+    <script>
+        button.addEventListener('click',(e) => {
+            $.ajax({
+            url: "http://jack.com:8002/pay",
+            dataType: "jsonp",
+            success: function( response ) {
+            if(response === 'success'){
+            amount.innerText = amount.innerText - 1
+     }
+ }
+ })
+})       
+    </script>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
