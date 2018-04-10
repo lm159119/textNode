@@ -46,7 +46,7 @@ var server = http.createServer(function(request, response){
   }else{
     response.statusCode = 404
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response('充钱会使你更强，赶紧充钱吧！！！没钱你玩个卵')
+    response('充钱会使你更强，赶紧充钱吧！！！没钱你玩个JB')
     response.end()
   }
 })
